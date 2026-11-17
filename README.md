@@ -1,31 +1,37 @@
-# Natuleadan® uorion™
+# Natuleadan® Orion™
 
 > A Rust SDK framework for writing APIs from reusable pieces.
 
-Technical documentation for the repository. Product scope and specifications
-live in `docs/`; work is tracked in `tareas/`.
+Orion is an SDK for composing APIs in Rust from mutable, reusable building blocks. APIs are defined in code, with no YAML-driven configuration.
 
-## Structure
+## What it provides
+
+- Code-first API definitions with no YAML configuration.
+- Mutable, reusable building blocks.
+- A typed, composable SDK surface.
+
+## Layout
 
 | Path | Purpose |
 |---|---|
-| `crates/` | Rust library crates, one concern per crate |
+| `crates/orion/` | Library crate |
 | `docs/` | Product documentation |
 | `tools/` | Validation entry points |
 
-## Validation
+## Development
 
-Run `pnpm validate` before pushing. It runs formatting, linting, tests and
-repository hygiene checks, and is the same command CI uses.
+Requires Rust 1.100 or newer and pnpm. Run the same checks locally that CI
+runs before opening a pull request.
 
-## Trademark
+```sh
+pnpm validate
+```
 
-Natuleadan® uorion™ is a trademark of Natuleadan.
+## Documentation
 
-## Branching workflow
+- [Architecture](docs/ARCHITECTURE.md)
+- [Contributing](CONTRIBUTING.md)
 
-`main` is the protected production branch and the default branch. `dev` is the
-protected integration branch. Work happens on short-lived branches
-(`feat/...`, `fix/...`, `docs/...`, `refactor/...`, `ci/...`) and reaches `dev`
-through a pull request; `dev` is consolidated into `main` afterwards. Never
-push directly to `main` or `dev`, and never rewrite published history.
+## License
+
+Apache-2.0. See [LICENSE](LICENSE).
