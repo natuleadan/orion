@@ -20,7 +20,7 @@ Orion is a sovereign, protocol-agnostic universal framework and modular runtime 
 
 Orion implements a layered six-file modular domain layout (`entity`, `dto`, `repository`, `service`, `controller`, `mod`) atop a pure-Cargo workspace (`crates/core` and `crates/xtask`). Pluggable transport adapters and compatibility layers decouple core business contracts from specific device or network targets, governed by eight native validation gates and a 3-day dependency cooldown.
 
-> **Current scope:** This release ships the native validation harness, the six-file modular reference domain (`modules/math`), and the crate contracts. Transports, sandboxes, domain engines and protocol integrations described below are planned milestones, not shipped capabilities.
+> **Current scope:** This release ships the native validation harness, the six-file modular reference domain (`modules/math`), and the crate contracts. Transports, sandboxes, domain engines and protocol integrations described throughout this document are planned milestones, not shipped capabilities.
 
 ## 2. Why Orion?
 
